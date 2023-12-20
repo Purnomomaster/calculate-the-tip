@@ -1,0 +1,15 @@
+t_bill = input("Enter the total bill: ")
+first = int(t_bill) * 0.18
+second = int(t_bill) * 0.2
+third = int(t_bill) * 0.25
+split = input("How many people are there for the bill?: ")
+s_1 = int(split) - 1
+t1 = first + int(t_bill)
+t2 = second + int(t_bill)
+t3 = third + int(t_bill)
+print(f"18% tip is ${first}, which brings your total to ${t1}")
+print(f"20% tip is ${second}, which brings your total to ${t2}")
+print(f"25% tip is ${third}, which brings your total to ${t3}")
+print(f"if the bill is 18%, a person will pay ${0.7*t1} and other will pay$ {0.3*t1/s_1}")
+print(f"if the bill is 20%, a person will pay ${0.7*t2} and other will pay$ {0.3*t2/s_1}")
+print(f"if the bill is 25%, a person will pay ${0.7*t3} and other will pay$ {0.3*t3/s_1}")
